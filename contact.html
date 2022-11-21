@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <!--css file link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!---font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    
+ <!--Header Section-->
+
+    <section class="sub-header">
+       <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="tour.html">TOURS</a></li>
+                    <li><a href="explore.html">EXPLORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>  
+            </div> 
+            <li class="fa fa-bars" onclick="showMenu()"></li> 
+        </nav>
+
+ <!---- Small JavaScript for Toggle Menu---->
+
+ <script>
+  var navLinks = document.getElementById("navLinks");
+ 
+  function showMenu(){
+      navLinks.style.right ="0";
+  }
+  function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+</script>         
+
+      <h1>Contact Us</h1>    
+    </section>
+
+<!----------Contact Us---------->
+
+
+  <section class="contact-us">
+      <div class="row">
+         <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <span>
+                    <h5>Shop No-58, SM Jadhav Rd</h5>
+                    <p>Mumbai, Maharashtra, India</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>+918097272726<h5>
+                    <p>Monday to Saturday, 9AM to 10PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>info@travelotours.com<h5>
+                    <p>Email us for your query</p>
+                </span>
+            </div>
+         </div>
+         <div class="contact-col">
+
+            <form action="">
+                <input type="text" placeholder="*Enter your name" required>
+                <input type="email" placeholder="*Enter email address" required>
+                <input type="text" placeholder="*Enter your travelling category" required>
+                <textarea rows="7" placeholder="*What else do you need to know" required></textarea>
+                <button type="submit" class="star-btn blue-btn">Send Message</button>
+            </form>
+
+         </div>
+      </div>
+  </section>
+ 
+ <!--------Footer---------->
+
+   <section class="footer">
+       <h4>About Us</h4>
+       <p>We provides travel and tourism-related services to the general public on behalf of accommodation 
+        or travel suppliers to offer<br>different kinds of travelling packages for each destination.</p>
+
+       <div class="icons">
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-linkedin"></i>  
+           <i class="fa-brands fa-instagram"></i>
+       </div>
+       <p> Made with <i class="fa-solid fa-heart"></i> by Fareed Ansari</p>
+   </section>
+
+</body>
+</html>

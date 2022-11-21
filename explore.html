@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <!--css file link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!---font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    
+ <!--Header Section-->
+
+    <section class="sub-header">
+       <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="tour.html">TOURS</a></li>
+                    <li><a href="explore.html">EXPLORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>  
+            </div> 
+            <li class="fa fa-bars" onclick="showMenu()"></li> 
+        </nav>
+
+ <!---- Small JavaScript for Toggle Menu---->
+
+ <script>
+  var navLinks = document.getElementById("navLinks");
+ 
+  function showMenu(){
+      navLinks.style.right ="0";
+  }
+  function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+</script>         
+
+    <h1>Explore the beautifull world</h1>    
+    </section>
+ 
+
+<!-------Explore content------->
+
+  <section class="exp-content">
+       <div class="row">
+          <div class="exp-left">
+             <img src="images/explore.jpg" >
+             <h2>Explore the beautifull world :</h2>
+             <p>Travelling is an amazing way to learn a lot of things in life. A lot of people around the world travel
+             every year to many places. Moreover, it is important to travel to humans. Some travel to learn more 
+             while some travel to take a break from their life. No matter the reason, travelling opens a big door
+             for us to explore the world beyond our imagination and indulge in many things.</p>
+             <br>
+             <p>There are a lot of reasons to travel. Some people travel for fun while some do it for education purposes.
+             Similarly, others have business reasons to travel. In order to travel, one must first get an idea of 
+             their financial situation and then proceed.  people who travel for fun get to experience and indulge in
+             refreshing things which may serve as a stress reducer in their lives.</p>
+             <br>
+             <p>There are numerous benefits to travelling if we think about it. The first one being, we get to meet new
+             people. When you meet new people, you get the opportunity to make new friends. It may be a fellow 
+             traveller or the local you asked for directions.</p>
+             <br>
+             <p>Travelling makes it easier to understand people. You will learn how other people eat, speak, live and more.
+             When you get out of your comfort zone, you will become more sensitive towards other cultures and the people.
+             A very important thing which travelling teaches us is to enjoy nature. It helps us appreciate the true 
+             beauty of the earth.</p>
+
+             
+          </div>
+          <div class="exp-right">
+            <h3>Travelling Categories</h3>
+            <div>
+                <span>*Category</span>
+                <span>*Options</span>
+            </div>
+            <div>
+                <span>Adventure travel</span>
+                <span>20</span>
+            </div>
+            <div>
+                <span>Business travel</span>
+                <span>30</span>
+            </div>
+            <div>
+                <span>Long Distance travel</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>road Trips</span>
+                <span>20</span>
+            </div>
+            <div>
+                <span>International Travel</span>
+                <span>40</span>
+            </div>
+            <div>
+                <span>Domestic Travel</span>
+                <span>38</span>
+            </div>
+            <div>
+                <span>Students Travel</span>
+                <span>25</span>
+            </div>
+          </div> 
+       </div>   
+  </section>
+
+ <!--Footer-->
+
+   <section class="footer">
+       <h4>About Us</h4>
+       <p>We provides travel and tourism-related services to the general public on behalf of accommodation 
+        or travel suppliers to offer<br>different kinds of travelling packages for each destination.</p>
+
+       <div class="icons">
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-linkedin"></i>  
+           <i class="fa-brands fa-instagram"></i>
+       </div>
+       <p> Made with <i class="fa-solid fa-heart"></i> by Fareed Ansari</p>
+   </section>
+
+</body>
+</html>

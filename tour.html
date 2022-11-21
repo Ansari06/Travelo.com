@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <!--css file link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!---font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    
+ <!--Header Section-->
+
+    <section class="sub-header">
+       <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="tour.html">TOURS</a></li>
+                    <li><a href="explore.html">EXPLORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>  
+            </div> 
+            <li class="fa fa-bars" onclick="showMenu()"></li> 
+        </nav>
+
+ <!---- Small JavaScript for Toggle Menu---->
+
+ <script>
+  var navLinks = document.getElementById("navLinks");
+ 
+  function showMenu(){
+      navLinks.style.right ="0";
+  }
+  function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+</script>         
+
+     <h1>Touring Places</h1>    
+    </section>
+ 
+
+ <!-----------Tour----------->
+  
+ <section class="tour">
+    <h1>Places where you can visit</h1>
+    <P>Life begins at the end of your comfort zone.</P>
+
+    <div class="row">
+      <div class="tour-col">
+         <h3>Hillstations</h3>
+         <p>Keep close to nature's heart...and break clear away, once in a while, and climb 
+         a mountain or spend a week in the woods. Wash your spirit clean.</p>         
+      </div>
+      <div class="tour-col"> 
+        <h3>Beaches</h3>
+        <p>At the beach, life is different. Time dosen't move hour to hour but mood to mood
+         to moment. We live by the currents,plan by the tides and follow the sun.</p>
+      </div>
+      <div class="tour-col"> 
+         <h3>Heritages</h3>
+         <p>A concerted effort to preserve our heritage is a vital link to our cultural, educational,
+          aesthetic, inspirational, and economic leagacies.</p>
+      </div> 
+    </div>
+ </section>
+
+<!--------Travel Worldwide---------->
+
+<section class="inter">
+    <h1>Travel Worldwide</h1>
+    <P>Life begins at the end of your comfort zone.</P>
+
+    <div class="row">
+       <div class="inter-col">
+           <img src="images/inter1.jpeg">
+           <div class="layer">
+            <h3>INDIA</h3>
+           </div>     
+       </div>
+       <div class="inter-col">
+           <img src="images/inter3.jpg">
+           <div class="layer">
+           <h3>PARIS</h3>
+           </div>
+       </div> 
+       <div class="inter-col">
+           <img src="images/inter2.jpg">
+           <div class="layer">
+           <h3>DUBAI</h3>
+           </div>     
+       </div>      
+    </div> 
+    <div class="row">
+        <div class="inter-col">
+            <img src="images/inter4.jpg">
+            <div class="layer">
+             <h3>Mexico</h3>
+            </div>     
+        </div>
+        <div class="inter-col">
+            <img src="images/inter5.jpg">
+            <div class="layer">
+            <h3>Canada</h3>
+            </div>
+        </div> 
+        <div class="inter-col">
+            <img src="images/inter6.jpg">
+            <div class="layer">
+            <h3>Spain</h3>
+            </div>     
+        </div>      
+     </div>          
+</section>
+
+
+ <!--Footer-->
+
+   <section class="footer">
+       <h4>About Us</h4>
+       <p>We provides travel and tourism-related services to the general public on behalf of accommodation 
+        or travel suppliers to offer<br>different kinds of travelling packages for each destination.</p>
+
+       <div class="icons">
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-linkedin"></i>  
+           <i class="fa-brands fa-instagram"></i>
+       </div>
+       <p> Made with <i class="fa-solid fa-heart"></i> by Fareed Ansari</p>
+   </section>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <!--css file link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!---font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    
+ <!--Header Section-->
+
+    <section class="header">
+       <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="tour.html">TOURS</a></li>
+                  <li><a href="explore.html">EXPLORE</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                </ul>  
+            </div> 
+            <li class="fa fa-bars" onclick="showMenu()"></li> 
+        </nav>
+    <div class="text-box">
+        <h1>Best Holiday's Makers</h1>
+        <p>Travelling is an important part of human life and it instils<br> knowledge and various benefits<br> to mankind.</p>
+        <a href="about.html" class="star-btn">About Us</a>
+    </div>        
+    </section>
+
+ <!---- Small JavaScript for Toggle Menu---->
+
+   <script>
+     var navLinks = document.getElementById("navLinks");
+    
+     function showMenu(){
+         navLinks.style.right ="0";
+     }
+     function hideMenu(){
+         navLinks.style.right ="-200px";
+     }
+   </script> 
+
+    
+ <!---Travel Section-->
+
+ <section class="travel">
+  <h1>Travelling modes</h1>
+  <p>Life begins at the end of your comfort zone.</p>
+
+  <div class="row">
+     <div class="travel-col">
+       <img src="images/trav1.jpg">
+         <h3>Airways</h3>
+         <p>Flying is always the bussines of freedom.</p>   
+     </div>
+     <div class="travel-col">
+      <img src="images/trav2.jpg">
+        <h3>Roadways</h3>
+        <p>No road is long with good company.</p>   
+    </div>
+    <div class="travel-col">
+      <img src="images/trav3.jpg">
+        <h3>Seaways</h3>
+        <p>Cruising is fixing your boat in excotic location.</p>   
+    </div>  
+  </div>
+</section>
+
+ <!---International Places Section-->
+
+    <section class="inter">
+        <h1>International Places</h1>
+        <P>Life begins at the end of your comfort zone.</P>
+
+        <div class="row">
+           <div class="inter-col">
+               <img src="images/inter1.jpeg">
+               <div class="layer">
+                <h3>INDIA</h3>
+               </div>     
+           </div>
+           <div class="inter-col">
+               <img src="images/inter3.jpg">
+               <div class="layer">
+               <h3>PARIS</h3>
+               </div>
+           </div> 
+           <div class="inter-col">
+               <img src="images/inter2.jpg">
+               <div class="layer">
+               <h3>DUBAI</h3>
+               </div>     
+           </div>      
+        </div>       
+    </section>
+
+ <!--Services Section-->
+
+    <section class="services">
+        <h1>Our Services</h1>
+        <p>Life begins at the end of your comfort zone.</p>
+
+        <div class="row">
+           <div class="services-col">
+             <img src="images/serv1.png">
+               <h3>Support</h3>
+               <p>You will never travel alone. 24/7 support is at your disposal.</p>   
+           </div>
+           <div class="services-col">
+            <img src="images/serv2.jpg">
+              <h3>Quality</h3>
+              <p>We provide every service striving to the highest standards.</p>   
+          </div>
+          <div class="services-col">
+            <img src="images/serv3.png">
+              <h3>Unique</h3>
+              <p>Our mission is to create a unique experience <br>can only get with us.</p>   
+          </div>  
+        </div>
+    </section>
+
+
+ <!---Online booking--->
+  
+   <section class="book">
+      <h1>enroll for our various online booking<br>anywhere from the world</h1>
+      <a href="contact.html" class="star-btn">CONTACT US</a>
+   </section>
+  
+
+   
+ <!--Footer-->
+    
+   <section class="footer">
+       <h3>About Us</h3>
+       <p>We provides travel and tourism-related services to the general public on behalf of accommodation 
+        or travel suppliers to offer<br>different kinds of travelling packages for each destination.</p>
+      
+       <div class="icons">
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-linkedin"></i>  
+           <i class="fa-brands fa-instagram"></i>
+       </div>
+       <p> Made with <i class="fa-solid fa-heart"></i> by Fareed Ansari</p>
+   </section>
+
+</body>
+</html>
